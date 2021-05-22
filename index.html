@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="image/calculator.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="screen"></td>
+        </tr>
+        <tr>
+            <td><button onclick="get_input('(')">(</button></td>
+            <td><button onclick="get_input(')')">)</button></td>
+            <td><button class="del" onclick="del()">Del</button>
+            <td><button class="del" onclick="del_all()">AC</button>
+        </tr>
+        <tr>
+            <td><button onclick="get_input(7)">7</button></td>
+            <td><button onclick="get_input(8)">8</button></td>
+            <td><button onclick="get_input(9)">9</button></td>
+            <td><button onclick="get_input('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="get_input(4)">4</button></td>
+            <td><button onclick="get_input(5)">5</button></td>
+            <td><button onclick="get_input(6)">6</button></td>
+            <td><button onclick="get_input('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="get_input(1)">1</button></td>
+            <td><button onclick="get_input(2)">2</button></td>
+            <td><button onclick="get_input(3)">3</button></td>
+            <td><button onclick="get_input('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="get_input(0)">0</button></td>
+            <td><button onclick="get_input('.')">.</button></td>
+            <td><button id="result" onclick="calcultor()">=</button></td>
+            <td><button onclick="get_input('+')">+</button></td>
+        </tr>
+    </table>
+    <script src="my.js"></script>
+</body>
+</html>
