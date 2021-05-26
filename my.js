@@ -1,5 +1,12 @@
+let check= false;
 function get_input(number){
-    document.getElementById("screen").value += number;
+    if(check == true && number >= 0 && number <=9){
+        document.getElementById("screen").value = number;
+    }
+    else{
+        document.getElementById("screen").value += number;
+    }
+    check=false;
 }
 function del(){
     let output=document.getElementById("screen").value;
@@ -22,4 +29,5 @@ function calcultor(){
     else{
         document.getElementById("screen").value = result;
     }
+    check=true;
 }
